@@ -37,7 +37,9 @@ https://youtube.com/shorts/pQ8A2pTnrOk?feature=share
 The code for this project is available in this folder.
 
 ## Circuit
-![Circuit](temperature_sensor-setup.jpeg)
+<p align="center">
+  <img src="temperature_sensor-setup.jpeg" width="400">
+</p>
 
 ## What I Learned
 - how to read analog values from a sensor
