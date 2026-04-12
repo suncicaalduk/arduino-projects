@@ -1,19 +1,19 @@
 # arduino-projects
 My arduino projects from the book + some of my own projects
 
-# Arduino projekti
+# Arduino projects
 
-Ovaj repozitorij sadrži moje Arduino projekte koje radim kroz učenje i vlastite ideje.
+This repository contains my Arduino projects that I make through learning and my own ideas.
 
-## Projekti iz knjige
-1. Projekt 01 - Blink LED
-2. Projekt 02 - ...
-3. Projekt 03 - ...
+## Projects from the book
+1. Project 01 - Blink LED
+2. Project 02 - ...
+3. Project 03 - Temperature sensor
 
-## Cilj
-Cilj mi je razviti praktične vještine u radu s mikrokontrolerima i dokumentiranju projekata.
+## Goal
+My goal is to develop practical skills in working with microcontrollers and documenting projects.
 
-## Tehnologije
+## Tehnologies
 - Arduino
 - C/C++
-- Elektronika
+- Electronics
