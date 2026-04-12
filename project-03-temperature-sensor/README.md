@@ -36,6 +36,9 @@ https://youtube.com/shorts/pQ8A2pTnrOk?feature=share
 ## Code
 The code for this project is available in this folder.
 
+## Circuit
+![Circuit](temperature_sensor-setup.jpeg)
+
 ## What I Learned
 - how to read analog values from a sensor
 - how to map sensor data to real-world values (temperature)
