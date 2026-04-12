@@ -23,7 +23,7 @@ The temperature sensor outputs an analog voltage depending on the temperature.
 The Arduino reads this value and converts it into a temperature reading.
 
 Depending on the temperature:
-- low temperature → no LEDs
+- room temperature → no LEDs
 - medium temperature → 1–2 LEDs
 - high temperature → all LEDs ON
 
@@ -50,7 +50,9 @@ The code for this project is available in this folder.
 ## Challenges
 - understanding how analog values relate to real temperature  
 - adjusting thresholds for LED activation  
-- ensuring stable sensor readings  
+- ensuring stable sensor readings
+- inclusion of TMP36 offset due to the possibility of measuring negative temperatures
+- necessary to ensure a small delay
 
 ## Key Insight
 Small voltage changes from the sensor represent temperature differences, so proper conversion and threshold setting are essential for accurate behavior.
