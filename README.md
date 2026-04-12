@@ -1,4 +1,4 @@
-# arduno-projects
+# arduino-projects
 My arduino projects from the book + some of my own projects
 
 # Arduino projekti
