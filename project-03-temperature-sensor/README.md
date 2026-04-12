@@ -33,13 +33,13 @@ This creates a visual “thermometer” using LEDs.
 Watch the project in action:  
 https://youtube.com/shorts/pQ8A2pTnrOk?feature=share
 
-## Code
-The code for this project is available in this folder.
-
 ## Circuit
 <p align="center">
   <img src="temperature_sensor-setup.jpeg" width="400">
 </p>
+
+## Code
+The code for this project is available in this folder.
 
 ## What I Learned
 - how to read analog values from a sensor
@@ -47,8 +47,13 @@ The code for this project is available in this folder.
 - using `if` statements to control outputs
 - basic hardware debugging
 
-## Notes
-This project helped me better understand how sensors interact with microcontrollers and how to translate real-world data into meaningful output.
+## Challenges
+- understanding how analog values relate to real temperature  
+- adjusting thresholds for LED activation  
+- ensuring stable sensor readings  
+
+## Key Insight
+Small voltage changes from the sensor represent temperature differences, so proper conversion and threshold setting are essential for accurate behavior.
 
 ## Future Improvements
 - display temperature on LCD
