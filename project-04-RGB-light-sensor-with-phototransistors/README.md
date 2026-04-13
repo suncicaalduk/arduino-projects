@@ -38,7 +38,7 @@ Cathode → GND (through resistors)
 </p>.
 
 ## Demo
-blblalabla
+Watch the project in action: LINK
 
 ## What I learned
 stoooo
@@ -62,4 +62,7 @@ gdje sam zapela
 - Analog sensors (phototransistors)
 - PWM control
 - Serial communication
+
+## Code
+The code for this project is available in this folder.
 
