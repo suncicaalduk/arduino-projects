@@ -41,15 +41,14 @@ Cathode → GND (through resistors)
 Watch the project in action: LINK
 
 ## What I learned
-stoooo
-
-## Features
-- Real-time color detection and reproduction
+- Functioning of the phototransistor
+- Real-time color detection
 - Serial monitor output showing raw and mapped sensor values
 - Educational project for learning analog sensors and PWM
+- Functioning of the common chatode RGB LED
 
 ## Challenges
-gdje sam zapela
+The most challenging part was the functioning of the phototransistor itself. It took me more time to understand how exactly it generates a current proportional to quantity of light absorbed.
 
 ## Future Improvements / Experiments
 - Automatic calibration (min/max values)
