@@ -33,6 +33,9 @@ RGB LED:Red pin → Arduino pin 10 (PWM)
 Green pin → Arduino pin 9 (PWM)
 Blue pin → Arduino pin 11 (PWM)
 Cathode → GND (through resistors)
+<p align="center">
+  <img src="temperature_sensor-setup.jpeg" width="400">
+</p>.
 
 ## Features
 - Real-time color detection and reproduction
