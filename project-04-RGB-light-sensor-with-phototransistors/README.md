@@ -15,6 +15,7 @@ It demonstrates a practical understanding of:
 - 3× Phototransistors
 - 3× Current-limiting resistors (for RGB LED, 220Ω)
 - 3× Load resistors (for phototransistors, 10kΩ)
+- 3x Gels (red, green, blue)
 - Jumper wires and breadboard
 
 ## How It Works
