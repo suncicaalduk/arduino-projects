@@ -1,23 +1,30 @@
 ## Description
-This project uses three colored phototransistors (red, green, and blue) to detect the intensity of light in their respective wavelengths. The Arduino reads the light levels and controls an RGB LED to mirror the detected colors in real-time.It demonstrates a practical understanding of:Phototransistors and photoelectric effect
-Common-collector transistor configuration
-Analog-to-digital conversion (ADC)
-PWM (Pulse Width Modulation) for LED brightness control
-RGB color mixing
+This project uses three phototransistors covered with gels that only transmit light of a specific wavelength (red, green, and blue) to detect the intensity of light in their respective wavelengths. The Arduino reads the light levels and controls an RGB LED to mirror the detected colors in real-time.
+
+## Goal
+It demonstrates a practical understanding of:
+- Phototransistors and photoelectric effect
+- Common-collector transistor configuration
+- Analog-to-digital conversion (ADC)
+- PWM (Pulse Width Modulation) for LED brightness control
+- RGB color mixing
 
 ## How It Works
-Three phototransistors with color filters detect red, green, and blue light components.
-Each phototransistor is connected in common-collector mode.
-The analog pins (A0, A1, A2) read the voltage drop across the emitter resistor.
-The raw values (0–1023) are mapped to 0–255 range and sent to PWM pins.
-The RGB LED reproduces the detected color by adjusting the brightness of its red, green, and blue channels.
+- Three phototransistors with color filters detect red, green, and blue light components.
+- Each phototransistor is connected in common-collector mode.
+- The analog pins (A0, A1, A2) read the voltage drop across the emitter resistor.
+- The raw values (0–1023) are mapped to 0–255 range and sent to PWM pins.
+- The RGB LED reproduces the detected color by adjusting the brightness of its red, green, and blue channels.
 
-Important note: In this configuration, higher sensor values = brighter light detected.Hardware ComponentsArduino Uno (or compatible board)
-RGB LED (common cathode)
-3× Colored phototransistors (Red, Green, Blue)
-3× Current-limiting resistors (for RGB LED, typically 220Ω–330Ω)
-3× Load resistors for phototransistors (recommended 10kΩ)
-Jumper wires and breadboard
+Important note: In this configuration, higher sensor values = brighter light detected. 
+
+## Hardware Components
+- Arduino Uno
+- RGB LED (common cathode)
+- 3× Phototransistors
+- 3× Current-limiting resistors (for RGB LED, 220Ω)
+- 3× Load resistors (for phototransistors, 10kΩ)
+- Jumper wires and breadboard
 
 ## Circuit 
 Phototransistor Collector → 5V
