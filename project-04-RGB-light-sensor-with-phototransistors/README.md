@@ -18,7 +18,7 @@ It demonstrates a practical understanding of:
 
 Important note: In this configuration, higher sensor values = brighter light detected. 
 
-## Hardware Components
+## Components
 - Arduino Uno
 - RGB LED (common cathode)
 - 3× Phototransistors
