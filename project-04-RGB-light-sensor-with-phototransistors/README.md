@@ -1,11 +1,11 @@
-##Description
+## Description
 This project uses three colored phototransistors (red, green, and blue) to detect the intensity of light in their respective wavelengths. The Arduino reads the light levels and controls an RGB LED to mirror the detected colors in real-time.It demonstrates a practical understanding of:Phototransistors and photoelectric effect
 Common-collector transistor configuration
 Analog-to-digital conversion (ADC)
 PWM (Pulse Width Modulation) for LED brightness control
 RGB color mixing
 
-##How It Works
+## How It Works
 Three phototransistors with color filters detect red, green, and blue light components.
 Each phototransistor is connected in common-collector mode.
 The analog pins (A0, A1, A2) read the voltage drop across the emitter resistor.
@@ -19,7 +19,7 @@ RGB LED (common cathode)
 3× Load resistors for phototransistors (recommended 10kΩ)
 Jumper wires and breadboard
 
-##Circuit 
+## Circuit 
 Phototransistor Collector → 5V
 Phototransistor Emitter → Analog pin + 10kΩ resistor to GND
 RGB LED:Red pin → Arduino pin 10 (PWM)
@@ -31,7 +31,7 @@ FeaturesReal-time color detection and reproduction
 Serial monitor output showing raw and mapped sensor values
 Simple and educational project for learning analog sensors and PWM
 
-##Future Improvements / Experiments
+## Future Improvements / Experiments
 Automatic calibration (min/max values)
 Smooth color transitions
 Complementary color mode (opposite colors)
@@ -39,7 +39,7 @@ Data logging
 Integration with Processing or p5.js for visualization
 Adding a button or potentiometer for mode switching
 
-##Technologies Used
+## Technologies Used
 Arduino C++
 Analog sensors (phototransistors)
 PWM control
