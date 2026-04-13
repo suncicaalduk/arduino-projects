@@ -9,6 +9,14 @@ It demonstrates a practical understanding of:
 - PWM (Pulse Width Modulation) for LED brightness control
 - RGB color mixing
 
+## Components
+- Arduino Uno
+- RGB LED (common cathode)
+- 3× Phototransistors
+- 3× Current-limiting resistors (for RGB LED, 220Ω)
+- 3× Load resistors (for phototransistors, 10kΩ)
+- Jumper wires and breadboard
+
 ## How It Works
 - Three phototransistors with color filters detect red, green, and blue light components.
 - Each phototransistor is connected in common-collector mode.
@@ -17,14 +25,6 @@ It demonstrates a practical understanding of:
 - The RGB LED reproduces the detected color by adjusting the brightness of its red, green, and blue channels.
 
 Important note: In this configuration, higher sensor values = brighter light detected. 
-
-## Components
-- Arduino Uno
-- RGB LED (common cathode)
-- 3× Phototransistors
-- 3× Current-limiting resistors (for RGB LED, 220Ω)
-- 3× Load resistors (for phototransistors, 10kΩ)
-- Jumper wires and breadboard
 
 ## Circuit 
 Phototransistor Collector → 5V
@@ -37,10 +37,19 @@ Cathode → GND (through resistors)
   <img src="RGB_light_sensor-setup.jpeg" width="400">
 </p>.
 
+## Demo
+blblalabla
+
+## What I learned
+stoooo
+
 ## Features
 - Real-time color detection and reproduction
 - Serial monitor output showing raw and mapped sensor values
 - Educational project for learning analog sensors and PWM
+
+## Challenges
+gdje sam zapela
 
 ## Future Improvements / Experiments
 - Automatic calibration (min/max values)
