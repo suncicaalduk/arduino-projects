@@ -34,21 +34,20 @@ Green pin → Arduino pin 9 (PWM)
 Blue pin → Arduino pin 11 (PWM)
 Cathode → GND (through resistors)
 
-FeaturesReal-time color detection and reproduction
-Serial monitor output showing raw and mapped sensor values
-Simple and educational project for learning analog sensors and PWM
+## Features
+- Real-time color detection and reproduction
+- Serial monitor output showing raw and mapped sensor values
+- Educational project for learning analog sensors and PWM
 
 ## Future Improvements / Experiments
-Automatic calibration (min/max values)
-Smooth color transitions
-Complementary color mode (opposite colors)
-Data logging
-Integration with Processing or p5.js for visualization
-Adding a button or potentiometer for mode switching
+- Automatic calibration (min/max values)
+- Smooth color transitions
+- Complementary color mode (opposite colors)
+- Adding a button or potentiometer for mode switching
 
 ## Technologies Used
-Arduino C++
-Analog sensors (phototransistors)
-PWM control
-Serial communication
+- Arduino C++
+- Analog sensors (phototransistors)
+- PWM control
+- Serial communication
 
