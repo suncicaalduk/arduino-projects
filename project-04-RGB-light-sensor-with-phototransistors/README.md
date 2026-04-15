@@ -28,19 +28,20 @@ It demonstrates a practical understanding of:
 Important note: In this configuration, higher sensor values = brighter light detected. 
 
 ## Circuit 
-Phototransistor Collector → 5V
-Phototransistor Emitter → Analog pin + 10kΩ resistor to GND
-RGB LED:Red pin → Arduino pin 10 (PWM)
-Green pin → Arduino pin 9 (PWM)
-Blue pin → Arduino pin 11 (PWM)
-Cathode → GND (through resistors)
+- Phototransistor Collector connected to 5V
+- Phototransistor Emitter (Analog pin) trough 10kΩ resistor connected to GND
+RGB LED: Red pin → Arduino pin 10 (PWM)
+Green pin → Arduino pin 9 (PWM) 
+Blue pin → Arduino pin 11 (PWM) (through resistors)
+Cathode → GND
 <p align="center">
   <img src="RGB_light_sensor-setupp.jpeg" height="300">
   <img src="RGB_light_sensor-scheme.jpeg" height="300">
 </p>.
 
 ## Demo
-Watch the project in action: LINK
+Watch the project in action:
+https://youtube.com/shorts/m8uG3f1YL34?si=95o5YV90eodV7VDb
 
 ## What I learned
 - Functioning of the phototransistor
