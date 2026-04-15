@@ -80,6 +80,7 @@ After implementing calibration, the color transitions became more stable and vis
 - PWM control
 - Serial communication
 
-## Code
-The code for this project is available in this folder.
+## Code Versions
+- Basic version (from original project)
+- Calibrated version (improved accuracy)
 
