@@ -61,6 +61,15 @@ It also took some time to properly map the sensor values to achieve accurate col
 - Complementary color mode (opposite colors)
 - Adding a button or potentiometer for mode switching
 
+## Improvements Implemented
+I implemented basic sensor calibration to improve the accuracy of color detection.
+Instead of mapping the full 0–1023 range, I measured the real minimum and maximum values for each phototransistor and adjusted the mapping accordingly.
+This resulted in more stable and realistic color reproduction under different lighting conditions.
+
+## Before vs After
+Before the improvements, the LED changed colors abruptly and was sensitive to lighting conditions.
+After implementing calibration, the color transitions became more stable and visually appealing, several different shades came to the fore.
+
 ## Technologies Used
 - Arduino C++
 - Analog sensors (phototransistors)
