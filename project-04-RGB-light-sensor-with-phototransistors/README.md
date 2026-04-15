@@ -67,7 +67,7 @@ Instead of mapping the full 0–1023 range, I measured the real minimum and maxi
 This resulted in more stable and realistic color reproduction under different lighting conditions.
 
 ## Before vs After
-Before the improvements, the LED changed colors abruptly and was sensitive to lighting conditions.
+Before the improvements, the LED was sensitive to lighting conditions.
 After implementing calibration, the color transitions became more stable and visually appealing, several different shades came to the fore.
 
 ## Technologies Used
