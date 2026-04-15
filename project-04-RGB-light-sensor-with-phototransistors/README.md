@@ -27,7 +27,7 @@ It demonstrates a practical understanding of:
 
 Important note: In this configuration, higher sensor values = brighter light detected. 
 
-## 🔌 Circuit
+## Circuit
 - Phototransistor collector → 5V  
 - Phototransistor emitter → analog pin (A0, A1, A2) through a 10kΩ resistor to GND  
 - RGB LED:
