@@ -54,6 +54,10 @@ https://youtube.com/shorts/m8uG3f1YL34?si=95o5YV90eodV7VDb
 ## Challenges
 The most challenging part was understanding how phototransistors work and how they convert light into electrical signals.  
 It also took some time to properly map the sensor values to achieve accurate color reproduction.
+One issue I encountered was incorrectly using the `map()` function without assigning its return value.
+
+This caused the LED to display nearly constant colors regardless of sensor input.  
+After fixing this and properly mapping the sensor values, the system started responding correctly to light changes.
 
 ## Future Improvements / Experiments
 - Automatic calibration (min/max values)
