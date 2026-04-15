@@ -37,8 +37,8 @@ Important note: In this configuration, higher sensor values = brighter light det
   - Cathode → GND  
 
 <p align="center">
-  <img src="RGB_light_sensor-setupp.jpeg" width="45%">
-  <img src="RGB_light_sensor-scheme.jpeg" width="45%">
+  <img src="RGB_light_sensor-setupp.jpeg" height="300">
+  <img src="RGB_light_sensor-scheme.jpeg" height="300">
 </p>
 
 ## Demo
