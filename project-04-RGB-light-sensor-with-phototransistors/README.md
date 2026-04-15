@@ -43,7 +43,6 @@ Important note: In this configuration, higher sensor values = brighter light det
 
 ## Demo
 Watch the project in action:
-
 https://youtube.com/shorts/m8uG3f1YL34?si=95o5YV90eodV7VDb
 
 ## What I learned
@@ -80,8 +79,7 @@ After implementing calibration, the color transitions became more stable and vis
 
 ## Demo (Calibrated Version)
 After calibration: 
-
-https://youtube.com/shorts/NbyCj1qAVmU?feature=share
+https://youtube.com/shorts/NbyCj1qAVmU
 
 ## Technologies Used
 - Arduino C++
