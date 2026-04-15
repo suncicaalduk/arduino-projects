@@ -30,10 +30,7 @@ Important note: In this configuration, higher sensor values = brighter light det
 ## Circuit 
 - Phototransistor Collector connected to 5V
 - Phototransistor Emitter (Analog pin) trough 10kΩ resistor connected to GND
-- RGB LED:  - Red pin → Arduino pin 10 (PWM)
-            -Green pin → Arduino pin 9 (PWM) 
-            - Blue pin → Arduino pin 11 (PWM) (through resistors)
-            - Cathode → GND
+- RGB LED:  - Red pin → Arduino pin 10 (PWM), Green pin → Arduino pin 9 (PWM), Blue pin → Arduino pin 11 (PWM) (through resistors), Cathode → GND
 <p align="center">
   <img src="RGB_light_sensor-setupp.jpeg" height="300">
   <img src="RGB_light_sensor-scheme.jpeg" height="300">
