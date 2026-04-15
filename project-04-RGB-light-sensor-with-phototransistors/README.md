@@ -68,7 +68,10 @@ After fixing this and properly mapping the sensor values, the system started res
 ## Improvements Implemented
 I implemented basic sensor calibration to improve the accuracy of color detection.
 Instead of mapping the full 0–1023 range, I measured the real minimum and maximum values for each phototransistor and adjusted the mapping accordingly.
-This resulted in more stable and realistic color reproduction under different lighting conditions.
+
+After calibration, the LED output became more accurate and stable.
+In low-light conditions, the LED remains off, which reflects the absence of detected light.  
+Under illumination, the colors are clearer and better represent the actual light intensity.
 
 ## Before vs After
 Before the improvements, the LED was sensitive to lighting conditions.
