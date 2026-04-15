@@ -43,6 +43,7 @@ Important note: In this configuration, higher sensor values = brighter light det
 
 ## Demo
 Watch the project in action:
+
 https://youtube.com/shorts/m8uG3f1YL34?si=95o5YV90eodV7VDb
 
 ## What I learned
@@ -76,6 +77,11 @@ Under illumination, the colors are clearer and better represent the actual light
 ## Before vs After
 Before the improvements, the LED was sensitive to lighting conditions.
 After implementing calibration, the color transitions became more stable and visually appealing, several different shades came to the fore.
+
+## Demo (Calibrated Version)
+After calibration: 
+
+https://youtube.com/shorts/NbyCj1qAVmU?feature=share
 
 ## Technologies Used
 - Arduino C++
