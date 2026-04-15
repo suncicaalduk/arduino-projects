@@ -35,7 +35,7 @@ Green pin → Arduino pin 9 (PWM)
 Blue pin → Arduino pin 11 (PWM)
 Cathode → GND (through resistors)
 <p align="center">
-  <img src="RGB_light_sensor-setup.jpeg" width="300">
+  <img src="RGB_light_sensor-setupp.jpeg" width="300">
   <img src="RGB_light_sensor-scheme.jpeg" height="317">
 </p>.
 
