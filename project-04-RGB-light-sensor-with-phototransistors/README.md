@@ -1,3 +1,4 @@
+# Project 04 - RGB Light Sensor with Phototransistors (Color Mixing Lamp)
 ## Description
 This project detects the intensity of red, green, and blue light using three phototransistors with color filters.  
 The Arduino processes these values and controls an RGB LED to reproduce the detected color in real time.
@@ -59,7 +60,7 @@ One issue I encountered was incorrectly using the `map()` function without assig
 This caused the LED to display nearly constant colors regardless of sensor input.  
 After fixing this and properly mapping the sensor values, the system started responding correctly to light changes.
 
-## Future Improvements / Experiments
+## Future Improvements
 - Automatic calibration (min/max values)
 - Smooth color transitions
 - Complementary color mode (opposite colors)
