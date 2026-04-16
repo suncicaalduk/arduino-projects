@@ -4,13 +4,13 @@
 
 This project demonstrates how to read an analog input from a potentiometer and use it to control a servo motor in real time.
 
-The servo acts as a physical pointer that moves between 0° and 180°, creating an interactive "mood cue" or gauge. By turning the potentiometer, the user directly controls the position of the servo, making the system intuitive and responsive.
+The servo acts as a physical pointer that moves between 0° and 180°, creating an interactive "mood cue" or gauge. By turning the potentiometer, the user directly controls the position of the servo, making the system feel immediate and intuitive to use.
 
 ## Goal
 
 The goal of this project was to better understand how analog input can be translated into physical movement.
 
-Instead of just reading sensor values, I wanted to create a simple system where a user can directly control a mechanical output in real time. This helped me connect the abstract concept of voltage levels with something tangible and interactive.
+Instead of just reading sensor values, I wanted to create a simple system where a user can directly control a mechanical output in real time. 
 
 ## Components
 
@@ -18,11 +18,11 @@ Instead of just reading sensor values, I wanted to create a simple system where 
 - 10 kΩ potentiometer
 - Micro servo motor (SM S2309S)
 - Jumper wires and breadboard
-- 100 nF decoupling capacitors
+- 2x 100 nF decoupling capacitors
 
-##  How It Works
+## How It Works
 
--  A 10 kΩ potentiometer acts as a voltage divider.
+- A 10 kΩ potentiometer acts as a voltage divider.
 - The Arduino reads the analog value from the potentiometer (0–4095 on 12-bit resolution).
 - This value is mapped to a servo angle between 0° and 180°.
 - The servo motor physically moves an arrow to the corresponding position.
@@ -40,7 +40,9 @@ Instead of just reading sensor values, I wanted to create a simple system where 
 - Black wire → **GND**
 - White wire (signal) → **Pin 9**
 
-**Important:**  I added a 100 nF capacitor directly across the servo power pins for stability.
+**Important:**  
+- A 100 nF capacitor is placed across the servo power pins to stabilize the power supply.  
+- An additional 100 nF capacitor is used near the potentiometer to reduce noise on the analog signal.
 
 ## Demo
 Watch the project in action:
@@ -63,17 +65,19 @@ While I initially used it just as an input device, I took some time to better un
 Another area I explored more deeply was the role of decoupling capacitors.  
 At first, I didn’t fully understand why they were needed, but through testing I learned that they help stabilize the power supply and reduce noise caused by the servo motor.
 
+## Improvements Implemented
+
+The original implementation mapped the full 0°–180° range.
+I limited the servo movement range to 0°–90° instead of the full 0°–180°.
+
+This made the system more controlled and easier to use, especially for applications where only a partial range of motion is needed. This also helped reduce jitter and made the movement more stable.
+
 
 ## Future Improvements
 
 - Add multiple "mood zones" with LEDs (e.g. green = happy, red = angry)
 - Add a button to save favorite positions
 
-## Improvements Implemented
-
-I limited the servo movement range to 0°–90° instead of the full 0°–180°.
-
-This made the system more controlled and easier to use, especially for applications where only a partial range of motion is needed. It also reduced unnecessary movement and made the behavior more predictable.
 
 ## Technologies Used
 
@@ -85,4 +89,5 @@ This made the system more controlled and easier to use, especially for applicati
 
 ## Code
 
+The code for this project is available in this folder.
 
