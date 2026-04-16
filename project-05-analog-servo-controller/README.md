@@ -1,4 +1,4 @@
-# Analog Servo Controller
+# Project 05 - Analog Servo Controller (Mood Cue)
 
 ## Description
 
@@ -11,8 +11,7 @@ It is a great introduction to:
 - Mapping values with the `map()` function
 
 ---
-
-### 🔧 How It Works
+###  How It Works
 
 - A 10 kΩ potentiometer is used as a voltage divider.
 - The Arduino reads the analog value from the potentiometer (0–1023 on 10-bit or 0–4095 on 12-bit resolution).
