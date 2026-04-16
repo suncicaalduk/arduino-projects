@@ -26,7 +26,7 @@ It demonstrates a practical understanding of:
 - The analog values (0–1023) are mapped to a 0–255 range and sent to PWM pins.
 - The RGB LED reproduces the detected color by adjusting the brightness of its red, green, and blue channels.
 
-Important note: In this configuration, higher sensor values = brighter light detected. 
+**Important note:** In this configuration, higher sensor values = brighter light detected. 
 
 ## Circuit
 - Phototransistor collector → 5V  
