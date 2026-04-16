@@ -10,8 +10,7 @@ It is a great introduction to:
 - The `Servo` library and object-oriented programming in Arduino
 - Mapping values with the `map()` function
 
----
-###  How It Works
+##  How It Works
 
 - A 10 kΩ potentiometer is used as a voltage divider.
 - The Arduino reads the analog value from the potentiometer (0–1023 on 10-bit or 0–4095 on 12-bit resolution).
@@ -19,9 +18,7 @@ It is a great introduction to:
 - The servo motor physically moves an arrow to the corresponding position.
 - `delay(15)` ensures smooth and stable movement of the servo.
 
----
-
-### 🛠 Hardware Components
+## Hardware Components
 
 - Arduino Uno R4 (Minima or WiFi)
 - 10 kΩ potentiometer
@@ -30,9 +27,7 @@ It is a great introduction to:
 - Breadboard
 - Optional: 100 nF decoupling capacitor for the servo
 
----
-
-### 📌 Circuit Connection
+## Circuit Connection
 
 **Potentiometer:**
 - Left pin → **5V**
@@ -46,18 +41,15 @@ It is a great introduction to:
 
 **Important:** Add a 100 nF capacitor directly across the servo power pins for stability.
 
----
-
-### ✨ Features
+## Features
 
 - Real-time control of servo position using a potentiometer
 - Smooth movement thanks to proper `delay()` timing
 - Serial monitor output for debugging
 - Clean object-oriented code using the `Servo` library
 
----
 
-### 💻 Technologies Used
+## Technologies Used
 
 - Arduino C++ (with OOP – `Servo` class)
 - Analog input (`analogRead()`)
@@ -65,9 +57,7 @@ It is a great introduction to:
 - Servo motor PWM control
 - `analogReadResolution()` for Uno R4
 
----
-
-### 📚 What I Learned
+## What I Learned
 
 - How a potentiometer works as a voltage divider and how the wiper changes the resistance ratio
 - Difference between 10-bit and 12-bit ADC on Arduino Uno R4
@@ -76,9 +66,8 @@ It is a great introduction to:
 - Importance of decoupling capacitors with motors
 - Basics of object-oriented programming in Arduino (creating and using objects)
 
----
 
-### 🔮 Future Improvements / Experiments
+## Future Improvements
 
 - Add multiple "mood zones" with LEDs (e.g. green = happy, red = angry)
 - Implement smooth easing / animation between positions
@@ -86,6 +75,3 @@ It is a great introduction to:
 - Connect to Processing or p5.js to visualize the mood on screen
 - Create a physical enclosure / case with a printed mood scale
 
----
-
-### 📁 Project Structure
