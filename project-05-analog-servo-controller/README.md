@@ -50,7 +50,7 @@ Instead of just reading sensor values, I wanted to create a simple system where 
 
 ## Demo
 Watch the project in action:
-link
+https://youtube.com/shorts/lLfLosaYU5o
 
 ## What I Learned
 
