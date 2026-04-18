@@ -25,6 +25,7 @@ It demonstrates a practical understanding of:
 - The analog pins (A0, A1, A2) read the voltage drop across the emitter resistor.
 - The analog values (0–1023) are mapped to a 0–255 range and sent to PWM pins.
 - The RGB LED reproduces the detected color by adjusting the brightness of its red, green, and blue channels.
+- The sensor values are read, processed, and then used to control the RGB LED output
 
 **Important note:** In this configuration, higher sensor values = brighter light detected. 
 
@@ -71,25 +72,34 @@ Under illumination, the colors are clearer and better represent the actual light
 
 ## Before vs After
 Before the improvements, the LED was sensitive to lighting conditions.
-After implementing calibration, the color transitions became more stable and visually appealing, several different shades came to the fore.
+After implementing calibration, the color transitions became more stable and visually appealing, the color transitions became more stable and a wider range of shades became visible.
 
 ## Demo (Calibrated Version)
 After calibration: 
 https://youtube.com/shorts/NbyCj1qAVmU
 
 ## Future Improvements
-- Automatic calibration (min/max values)
-- Smooth color transitions
-- Complementary color mode (opposite colors)
-- Adding a button or potentiometer for mode switching
+- Implement signal filtering (e.g. moving average) to reduce sensor noise
+- Improve color normalization to achieve more accurate color reproduction
+- Introduce modular code structure (separating sensor reading and processing logic)
+- Add automatic calibration during system startup
+- Optimize PWM output for smoother transitions and reduced flickering
+
+## Embedded Concepts Demonstrated
+- Analog signal acquisition using phototransistors
+- Sensor calibration and value mapping
+- Basic real-time signal processing
+- PWM-based LED control
+- Interaction between hardware inputs and software logic
 
 ## Technologies Used
 - Arduino C++
 - Analog sensors (phototransistors)
 - PWM control
 - Serial communication
+- Basic signal processing techniques
 
-## Code Versions
-- Basic version (from original project)
-- Calibrated version (improved accuracy)
+## Versioning
+- Initial implementation: basic RGB mapping
+- Improved version: calibrated sensor input and stabilized output
 
