@@ -58,7 +58,7 @@ This resulted in faster but less stable movement, especially when the input sign
 
 ## Demo
 Watch the project in action:
-https://youtube.com/shorts/lLfLosaYU5o
+https://youtube.com/shorts/LRDxjJa-7WE
 
 ## What I Learned
 
