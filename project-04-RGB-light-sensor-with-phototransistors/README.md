@@ -16,16 +16,15 @@ It demonstrates a practical understanding of:
 - 3× Phototransistors
 - 3× Current-limiting resistors (for RGB LED, 220Ω)
 - 3× Load resistors (for phototransistors, 10kΩ)
-- 3x Gels (red, green, blue)
+- 3× Color filters (red, green, blue gels)
 - Jumper wires and breadboard
 
 ## How It Works
 - Three phototransistors with color filters detect red, green, and blue light components.
 - Each phototransistor is connected in common-collector mode.
 - The analog pins (A0, A1, A2) read the voltage drop across the emitter resistor.
-- The analog values (0–1023) are mapped to a 0–255 range and sent to PWM pins.
+- The analog values (0–1023) are mapped to a 0–255 PWM range for LED output control.
 - The RGB LED reproduces the detected color by adjusting the brightness of its red, green, and blue channels.
-- The sensor values are read, processed, and then used to control the RGB LED output
 
 **Important note:** In this configuration, higher sensor values = brighter light detected. 
 
@@ -61,25 +60,17 @@ One issue I encountered was incorrectly using the `map()` function without assig
 This caused the LED to display nearly constant colors regardless of sensor input.  
 After fixing this and properly mapping the sensor values, the system started responding correctly to light changes.
 
-
 ## Improvements Implemented
-I implemented basic sensor calibration to improve the accuracy of color detection.
-Instead of mapping the full 0–1023 range, I measured the real minimum and maximum values for each phototransistor and adjusted the mapping accordingly.
 
-After calibration, the LED output became more accurate and stable.
-In low-light conditions, the LED remains off, which reflects the absence of detected light.  
-Under illumination, the colors are clearer and better represent the actual light intensity.
+- Implemented sensor calibration by measuring individual min/max values for each phototransistor, improving color accuracy
+- Introduced per-channel normalization to compensate for differences in phototransistor sensitivity
+- Added deadband filtering to reduce LED flickering caused by small sensor fluctuations
 
 ## Before vs After
-Before the improvements, the LED was sensitive to lighting conditions.
-After implementing calibration, the color transitions became more stable and visually appealing, the color transitions became more stable and a wider range of shades became visible.
-
-## Demo (Calibrated Version)
-After calibration: 
-https://youtube.com/shorts/NbyCj1qAVmU
+Before the improvements, the LED output was highly sensitive to small lighting variations.
+After implementing calibration, the color transitions became more stable and a wider range of shades became visible.
 
 ## Future Improvements
-- Implement signal filtering (e.g. moving average) to reduce sensor noise
 - Improve color normalization to achieve more accurate color reproduction
 - Introduce modular code structure (separating sensor reading and processing logic)
 - Add automatic calibration during system startup
@@ -88,7 +79,7 @@ https://youtube.com/shorts/NbyCj1qAVmU
 ## Embedded Concepts Demonstrated
 - Analog signal acquisition using phototransistors
 - Sensor calibration and value mapping
-- Basic real-time signal processing
+- Real-time analog signal processing
 - PWM-based LED control
 - Interaction between hardware inputs and software logic
 
@@ -98,8 +89,8 @@ https://youtube.com/shorts/NbyCj1qAVmU
 - PWM control
 - Serial communication
 - Basic signal processing techniques
+- Sensor calibration techniques
 
-## Versioning
-- Initial implementation: basic RGB mapping
-- Improved version: calibrated sensor input and stabilized output
+## Code
+The source code is available in this repository.
 
