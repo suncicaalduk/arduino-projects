@@ -4,7 +4,7 @@
 
 This project demonstrates how to read an analog input from a potentiometer and use it to control a servo motor in real time.
 
-The servo acts as a physical pointer that moves between 0° and 180°, creating an interactive "mood cue" or gauge. By turning the potentiometer, the user directly controls the position of the servo, making the system feel immediate and intuitive to use.
+The servo acts as a physical pointer that moves between a limited angle range (10°–80°), creating an interactive "mood cue" or gauge. By turning the potentiometer, the user directly controls the position of the servo, making the system feel immediate and intuitive to use.
 
 ## Goal
 
@@ -24,9 +24,17 @@ Instead of just reading sensor values, I wanted to create a simple system where 
 
 - A 10 kΩ potentiometer acts as a voltage divider.
 - The Arduino reads the analog value from the potentiometer (0–4095 on 12-bit resolution).
-- This value is mapped to a servo angle between 0° and 180°.
-- The servo motor physically moves an arrow to the corresponding position.
-- `delay(15)` ensures smooth and stable movement of the servo.
+- The analog input is mapped to a limited servo angle range (10°–80°) for improved control
+- The servo does not jump directly to the target angle, but moves smoothly towards it
+- A small delay (`delay(15)`) controls update frequency and ensures stable operation
+
+### Initial Implementation
+
+In the original version of the project:
+- The servo was mapped to the full 0°–180° range
+- The servo position was updated directly without smoothing
+
+This resulted in faster but less stable movement, especially when the input signal changed rapidly.
 
 ## Circuit
 
@@ -71,10 +79,22 @@ At first, I didn’t fully understand why they were needed, but through testing 
 
 ## Improvements Implemented
 
-The original implementation mapped the full 0°–180° range.
-I limited the servo movement range to 0°–90° instead of the full 0°–180°.
+- Limited servo movement range (10°–80°) to improve control, reduce mechanical stress, and minimize jitter
+- Implemented smooth motion by gradually transitioning between angles instead of direct jumps
+- Introduced basic state-based control to separate input reading and servo output logic
 
-This made the system more controlled and easier to use, especially for applications where only a partial range of motion is needed. This also helped reduce jitter and made the movement more stable.
+### Motion Smoothing
+Instead of directly setting the servo position, the system gradually moves towards the target angle.  
+This results in smoother motion and eliminates abrupt changes caused by rapid input variation.
+
+### State-Based Control
+The system is organized into simple states:
+- READING: reading the analog input
+- OUTPUT: updating the servo position
+
+This structure separates input processing from output control and makes the system easier to understand and extend.
+
+These improvements transform the system from a basic direct control setup into a simple embedded control system with state-based logic and signal smoothing.
 
 
 ## Future Improvements
@@ -90,6 +110,7 @@ This made the system more controlled and easier to use, especially for applicati
 - `map()` function for value scaling
 - Servo motor PWM control
 - `analogReadResolution()` for Uno R4
+- Basic signal smoothing techniques
 
 ## Code
 
