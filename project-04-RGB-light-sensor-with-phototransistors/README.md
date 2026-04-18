@@ -44,7 +44,7 @@ It demonstrates a practical understanding of:
 
 ## Demo
 Watch the project in action:
-https://youtube.com/shorts/m8uG3f1YL34?si=95o5YV90eodV7VDb
+https://youtube.com/shorts/NbyCj1qAVmU
 
 ## What I learned
 - how phototransistors respond to different light intensities  
