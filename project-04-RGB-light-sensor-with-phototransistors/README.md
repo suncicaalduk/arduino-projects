@@ -92,5 +92,5 @@ After implementing calibration, the color transitions became more stable and a w
 - Sensor calibration techniques
 
 ## Code
-The source code is available in this repository.
+The code for this project is available in this folder.
 
