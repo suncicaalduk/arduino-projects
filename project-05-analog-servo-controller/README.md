@@ -40,6 +40,10 @@ Instead of just reading sensor values, I wanted to create a simple system where 
 - Black wire → **GND**
 - White wire (signal) → **Pin 9**
 
+<p align="center">
+  <img src="analog_servo_controller-setup.jpeg" height="300">
+</p>
+
 **Important:**  
 - A 100 nF capacitor is placed across the servo power pins to stabilize the power supply.  
 - An additional 100 nF capacitor is used near the potentiometer to reduce noise on the analog signal.
