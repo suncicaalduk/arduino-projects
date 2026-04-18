@@ -41,7 +41,7 @@ Instead of just reading sensor values, I wanted to create a simple system where 
 - White wire (signal) → **Pin 9**
 
 <p align="center">
-  <img src="analog_servo_controller-setup.jpeg" height="300">
+  <img src="analog_servo_controller-setup.jpeg" widtt="400">
 </p>
 
 **Important:**  
