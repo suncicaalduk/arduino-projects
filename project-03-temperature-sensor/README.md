@@ -51,8 +51,7 @@ The code for this project is available in this folder.
 - understanding how analog values relate to real temperature  
 - adjusting thresholds for LED activation  
 - ensuring stable sensor readings
-- inclusion of TMP36 offset due to the possibility of measuring negative temperatures
-- necessary to ensure a small delay
+- accounted for TMP36 voltage offset (500 mV) to support negative temperature readings
 
 ## Key Insight
 Small voltage changes from the sensor represent temperature differences, so proper conversion and threshold setting are essential for accurate behavior.
