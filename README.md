@@ -6,9 +6,9 @@ My arduino projects from the book + some of my own projects
 This repository contains my Arduino projects that I make through learning and my own ideas.
 
 ## Projects from the book
-1. Project 01 - Blink LED
-2. Project 02 - ...
-3. Project 03 - Temperature sensor
+1. Project 03 - Temperature sensor
+2. Project 04 - RGB light sensor with phototransistors
+3. Project 05 - Analog servo controller
 
 ## Goal
 My goal is to develop practical skills in working with microcontrollers and documenting projects.
